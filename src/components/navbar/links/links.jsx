@@ -1,9 +1,11 @@
 "use client"
-import React from 'react'
-import Link from "next/link";
+import React, { usestate } from 'react'
 import styles from "./links.module.css"
+import Link from 'next/link';
 import NavLink from './navLink/navLink';
  
+const Links = () => {
+
 const links = [
     {
         title: "Homepage",
@@ -21,37 +23,25 @@ const links = [
         title: "Events",
         path: "/event",
     },
-]
+];
 
-const Links = () => {
-    const [open, setOpen] = useState(false)
+//const Links = () => {
+    //const [open, setOpen] = usestate(false)
 
 
     //ADD COMMENTED BACK FOR AUTHENTICATION OF ADMIN
     //const session = true;
-    //const isAdmin = true;
+   // const isAdmin = true;
 
   return (
-    <div className={styles.container}>
+    <div className={styles.links}>
+        {links.map((link=>
+        <NavLink item={link} key={link.title}/>
+        ))}
 
-    
-    <div className= {styles.links}>
-        {links.map((link=>(
-            <NavLink item={link} key={link.title}/> 
-            )))}
-           {
-            //   session ? (
-            //        {
-            //           isAdmin && <NavLink item={{title: "Admin", path: "/admin"}}/>}
-                    
-            //      <button className={styles.logout}>Logout</button>
-            //   ) : (
-            //       <NavLink item={{title: "Login", path: "/login"}}/>
-            //      )
-              }
-        </div>
     </div>
+        
   );
 };
 
-export default Links
+export default Links;
