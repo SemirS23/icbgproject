@@ -1,9 +1,9 @@
 :root{
-  --bg: #a38c67;
-  --bgSoft: #a69883;
+  --bg: #629678;
+  --bgSoft: #629678;
   --text: white;
   --textSoft: #e5e5e5;
-  --btn: #677ea3;
+  --btn: #629678;
 
 }
 
@@ -24,7 +24,7 @@ a{
 }
 
 .container{
-  background-color: black;
+  background-color: rgb(211, 205, 174);
   width: 1536px;
   margin: auto;
   padding-left: 50px;

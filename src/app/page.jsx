@@ -18,7 +18,7 @@ return (
     </div>
     </div>
     <div className={styles.imageContainer}>
-      <Image src="/ICBG.jpg" alt="" fill className={styles.icbgImg}/>
+     <Image src="/newMosque.png" alt="" fill className={styles.icbgImg}/>
 
     </div>
 
