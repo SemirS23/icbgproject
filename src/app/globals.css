@@ -34,3 +34,24 @@ a{
   flex-direction: column;
   justify-content: space-between;
   }
+
+@media screen and (max-width: 1535px){
+  .container{
+    max-width: 1366px;
+  }
+
+}
+
+@media screen and (max-width: 1535px){
+  .container{
+    max-width: 1024px;
+  }
+
+}
+
+@media screen and (max-width: 1535px){
+  .container{
+    max-width: 768px;
+  }
+
+}
