@@ -8,7 +8,7 @@ const Links = () => {
 
 const links = [
     {
-        title: "Homepage",
+        title: "Home",
         path: "/",
     },
     {
